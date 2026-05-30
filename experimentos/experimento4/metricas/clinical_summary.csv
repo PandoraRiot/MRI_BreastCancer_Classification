@@ -1,0 +1,4 @@
+Model,Best Epoch,Best Phase,Train AUC,Val AUC Patient,Val Threshold,TEST AUC (cal),TEST AUC CI95,TEST Recall,TEST Specificity,TEST F1,TEST PPV,TEST NPV,TEST FNR,TEST Brier,TP / TN / FP / FN,Recall ≥ 0.95,Calibrated,Exec Time (min)
+resnet50,17,finetune,0.9996,0.9615,0.59,0.9406,"[0.827, 1.000]",0.8636,0.8462,0.8837,0.9048,0.7857,0.1364,0.0939,19/11/2/3,❌,✅ Isotónica (VAL→TEST),1.66
+efficientnet_b3,23,finetune,0.9221,0.951,0.48,0.8304,"[0.680, 0.962]",0.9091,0.3846,0.8,0.7143,0.7143,0.0909,0.1839,20/5/8/2,❌,✅ Isotónica (VAL→TEST),2.64
+mobilevit_s,14,finetune,0.9065,0.9161,0.515,0.7797,"[0.576, 0.946]",0.8182,0.6923,0.8182,0.8182,0.6923,0.1818,0.1678,18/9/4/4,❌,✅ Isotónica (VAL→TEST),1.35
