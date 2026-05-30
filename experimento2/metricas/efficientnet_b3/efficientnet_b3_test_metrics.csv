@@ -1,2 +1,0 @@
-model,threshold,AUC_ROC,AUC_CI95,PR_AUC,Accuracy,Balanced_Acc,Sensibilidad_Recall,Recall_CI95,Especificidad,PPV_Precision,NPV,NPV_CI95,FNR,F1_Score,Cohen_Kappa,Brier_Score,TP,TN,FP,FN,n_patients,target_recall_met
-efficientnet_b3,0.59,0.8462,"[0.670,0.980]",0.882,0.7429,0.6853,0.9091,"[0.773,1.000]",0.4615,0.7407,0.75,"[0.097,0.429]",0.0909,0.8163,0.4023,0.1813,20,6,7,2,35,False
