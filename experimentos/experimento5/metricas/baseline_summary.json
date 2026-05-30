@@ -1,0 +1,47 @@
+[
+    {
+        "Model":"resnet50",
+        "Best Epoch":17,
+        "Best Phase":"finetune",
+        "AUC":0.8969,
+        "Recall":0.8636,
+        "Specificity":0.8462,
+        "FNR":0.1364,
+        "F1":0.8837,
+        "PPV":0.9048,
+        "NPV":0.7857,
+        "Threshold":0.55,
+        "Execution Time (min)":1.67,
+        "Recall \u2265 0.95":"\u274c"
+    },
+    {
+        "Model":"mobilevit_s",
+        "Best Epoch":19,
+        "Best Phase":"finetune",
+        "AUC":0.8357,
+        "Recall":0.7727,
+        "Specificity":0.6923,
+        "FNR":0.2273,
+        "F1":0.7907,
+        "PPV":0.8095,
+        "NPV":0.6429,
+        "Threshold":0.495,
+        "Execution Time (min)":1.61,
+        "Recall \u2265 0.95":"\u274c"
+    },
+    {
+        "Model":"efficientnet_b3",
+        "Best Epoch":23,
+        "Best Phase":"finetune",
+        "AUC":0.8269,
+        "Recall":0.9091,
+        "Specificity":0.5385,
+        "FNR":0.0909,
+        "F1":0.8333,
+        "PPV":0.7692,
+        "NPV":0.7778,
+        "Threshold":0.48,
+        "Execution Time (min)":2.66,
+        "Recall \u2265 0.95":"\u274c"
+    }
+]
