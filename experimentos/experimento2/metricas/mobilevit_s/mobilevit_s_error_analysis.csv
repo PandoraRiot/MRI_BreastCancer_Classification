@@ -1,0 +1,36 @@
+patient,label,pred,prob,label_name,pred_name,threshold,error_type,dist_threshold,prob_str
+BreaDM-Be-1825,0,1,0.8056073,Benigno,Maligno,0.59,FP (falsa alarma),0.21560735,0.806
+BreaDM-Be-1911,0,1,0.6074175,Benigno,Maligno,0.59,FP (falsa alarma),0.01741755,0.607
+BreaDM-Be-1913,0,1,0.7892766,Benigno,Maligno,0.59,FP (falsa alarma),0.19927663,0.789
+BreaDM-Be-2017,0,0,0.43224615,Benigno,Benigno,0.59,Correcto,0.15775383,0.432
+BreaDM-Be-2114,0,1,0.6880598,Benigno,Maligno,0.59,FP (falsa alarma),0.09805983,0.688
+BreaDM-Be-1829,0,1,0.68114287,Benigno,Maligno,0.59,FP (falsa alarma),0.09114289,0.681
+BreaDM-Be-1902,0,0,0.56092477,Benigno,Benigno,0.59,Correcto,0.029075205,0.561
+BreaDM-Be-2103,0,0,0.54010755,Benigno,Benigno,0.59,Correcto,0.049892426,0.540
+BreaDM-Be-2010,0,1,0.6791219,Benigno,Maligno,0.59,FP (falsa alarma),0.08912194,0.679
+BreaDM-Be-2104,0,0,0.5616116,Benigno,Benigno,0.59,Correcto,0.028388381,0.562
+BreaDM-Ma-2136,1,1,0.77838594,Maligno,Maligno,0.59,Correcto,0.18838596,0.778
+BreaDM-Ma-2008,1,1,0.8360116,Maligno,Maligno,0.59,Correcto,0.24601161,0.836
+BreaDM-Ma-2048,1,1,0.77739906,Maligno,Maligno,0.59,Correcto,0.18739909,0.777
+BreaDM-Ma-1903,1,1,0.8289265,Maligno,Maligno,0.59,Correcto,0.23892653,0.829
+BreaDM-Ma-2018,1,1,0.7291287,Maligno,Maligno,0.59,Correcto,0.13912874,0.729
+BreaDM-Ma-2036,1,1,0.77735835,Maligno,Maligno,0.59,Correcto,0.18735838,0.777
+BreaDM-Ma-2133,1,1,0.7861061,Maligno,Maligno,0.59,Correcto,0.19610614,0.786
+BreaDM-Ma-2030,1,0,0.48899734,Maligno,Benigno,0.59,⚠️ FN (perdió cáncer),0.10100263,0.489
+BreaDM-Ma-1914,1,1,0.7814346,Maligno,Maligno,0.59,Correcto,0.19143462,0.781
+BreaDM-Ma-1817,1,1,0.8011875,Maligno,Maligno,0.59,Correcto,0.21118754,0.801
+BreaDM-Ma-2040,1,1,0.8284156,Maligno,Maligno,0.59,Correcto,0.2384156,0.828
+BreaDM-Ma-1806,1,1,0.8285654,Maligno,Maligno,0.59,Correcto,0.23856544,0.829
+BreaDM-Ma-1816,1,1,0.7880159,Maligno,Maligno,0.59,Correcto,0.19801593,0.788
+BreaDM-Ma-1819,1,1,0.7945139,Maligno,Maligno,0.59,Correcto,0.2045139,0.795
+BreaDM-Ma-1809,1,1,0.83405066,Maligno,Maligno,0.59,Correcto,0.24405068,0.834
+BreaDM-Ma-2112,1,1,0.7354592,Maligno,Maligno,0.59,Correcto,0.14545923,0.735
+BreaDM-Ma-1910,1,1,0.7723034,Maligno,Maligno,0.59,Correcto,0.18230343,0.772
+BreaDM-Be-2113,0,0,0.544957,Benigno,Benigno,0.59,Correcto,0.04504299,0.545
+BreaDM-Be-1813,0,1,0.65423214,Benigno,Maligno,0.59,FP (falsa alarma),0.06423217,0.654
+BreaDM-Be-2022,0,1,0.6538095,Benigno,Maligno,0.59,FP (falsa alarma),0.063809514,0.654
+BreaDM-Ma-1824,1,1,0.8202327,Maligno,Maligno,0.59,Correcto,0.23023272,0.820
+BreaDM-Ma-1909,1,0,0.55771536,Maligno,Benigno,0.59,⚠️ FN (perdió cáncer),0.032284617,0.558
+BreaDM-Ma-2027,1,1,0.7891857,Maligno,Maligno,0.59,Correcto,0.19918573,0.789
+BreaDM-Ma-1821,1,1,0.84966546,Maligno,Maligno,0.59,Correcto,0.2596655,0.850
+BreaDM-Ma-1923,1,1,0.8164181,Maligno,Maligno,0.59,Correcto,0.22641814,0.816

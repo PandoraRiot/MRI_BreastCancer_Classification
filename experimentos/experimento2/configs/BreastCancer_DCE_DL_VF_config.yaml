@@ -1,0 +1,114 @@
+experiment:
+  name: BreastCancer_DCE_DL_VF
+  project: BreastCancer_DCE_DL
+  iteration: VF
+  description: Pipeline modular V6 para clasificación de cáncer de mama en DCE-MRI
+    usando Transfer Learning, Fine-Tuning progresivo y evaluación clínica a nivel
+    paciente
+  seed: 42
+  timestamp: 2026-05-30 03:23
+  priority: clinical_recall
+  clinical_target:
+    sensitivity: 0.95
+  paper_target:
+    auc: 0.9154
+    accuracy: 0.882
+data:
+  dataset_root: /workspace/breast-cancer-dce-mri-classification/data
+  train_csv: /workspace/breast-cancer-dce-mri-classification/data/processed/BREAST_ROI_TRAIN.csv
+  val_csv: /workspace/breast-cancer-dce-mri-classification/data/processed/BREAST_ROI_VAL.csv
+  test_csv: /workspace/breast-cancer-dce-mri-classification/data/processed/BREAST_ROI_TEST.csv
+  n_train_slices: 1178
+  n_val_slices: 274
+  n_test_slices: 270
+  n_total_slices: 1722
+  n_patients: 232
+  n_benign: 85
+  n_malignant: 147
+  input_columns:
+  - pre_contrast
+  - post_early
+  - post_late
+  prediction_level: patient
+  split_strategy: holdout_70_15_15_patient_level
+normalization:
+  method: zscore_per_study
+  clip_percentile:
+  - 1
+  - 99
+augmentation:
+  rotation_deg: 12
+  translate: 0.05
+  scale_range:
+  - 0.92
+  - 1.08
+  horizontal_flip_prob: 0.5
+models:
+  resnet50:
+    enabled: true
+    backbone: resnet50
+    pretrained: ImageNet
+    image_size:
+    - 256
+    - 256
+    batch_size: 32
+    dropout: 0.4
+    optimizer: AdamW
+    scheduler: CosineAnnealingLR
+    epochs_frozen: 10
+    epochs_finetune: 20
+    learning_rate_head: 0.001
+    learning_rate_finetune: 0.0001
+    weight_decay: 0.0001
+    mixed_precision: true
+  efficientnet_b3:
+    enabled: true
+    backbone: efficientnet_b3
+    pretrained: ImageNet
+    image_size:
+    - 300
+    - 300
+    batch_size: 16
+    dropout: 0.5
+    optimizer: AdamW
+    scheduler: CosineAnnealingLR
+    epochs_frozen: 10
+    epochs_finetune: 20
+    learning_rate_head: 0.0005
+    learning_rate_finetune: 5.0e-05
+    weight_decay: 0.0001
+    mixed_precision: true
+  mobilevit_s:
+    enabled: true
+    backbone: mobilevit_s
+    pretrained: ImageNet
+    image_size:
+    - 256
+    - 256
+    batch_size: 32
+    dropout: 0.3
+    optimizer: AdamW
+    scheduler: CosineAnnealingLR
+    epochs_frozen: 10
+    epochs_finetune: 20
+    learning_rate_head: 0.001
+    learning_rate_finetune: 0.0001
+    weight_decay: 0.0001
+    mixed_precision: true
+loss:
+  type: focal_loss
+  focal_alpha: 0.6
+  focal_gamma: 2.0
+evaluation:
+  min_recall: 0.95
+  aggregation_method: mean
+  calibration_method: isotonic
+  primary_metric: patient_auc
+training:
+  patience: 5
+  gradient_clip: 1.0
+tracking:
+  mlflow_enabled: true
+  tensorboard_enabled: true
+  save_checkpoints: true
+  save_best_only: true
