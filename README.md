@@ -7,9 +7,8 @@
 
 Repositorio académico correspondiente al desarrollo experimental de la clasificación binaria de lesiones mamarias benignas y malignas. Para esto se utilizaron técnicas de aprendizaje profundo aplicadas sobre imágenes de resonancia magnética dinámica con contraste (DCE-MRI).
 
-# 📄 Título de la tesis
+# 📄 **Clasificación de lesiones mamarias utilizando aprendizaje profundo en imágenes de resonancia magnética.**
 
-**Clasificación de lesiones mamarias utilizando aprendizaje profundo en imágenes de resonancia magnética.**
 
 ## 👩‍💻 Autora
 
@@ -90,11 +89,11 @@ El notebook `GeneracionTablas.ipynb` fue desarrollado para ejecutarse en Google 
 
 El proyecto utiliza imágenes DCE-MRI provenientes del dataset público BreastDM, especializado en la clasificación y segmentación de lesiones mamarias.
 
-## 📈 Resultados
+## 📈 Mejores resultados correspondientes a Experimento 4. 
 
 | Model | Best Epoch | Best Phase | Train AUC | Val AUC Patient | Val Threshold | TEST AUC (cal) | TEST AUC CI95 | TEST Recall | TEST Specificity | TEST F1 | TEST PPV | TEST NPV | TEST FNR | TEST Brier | TP / TN / FP / FN | Exec Time (min) |
 | :--- | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
-| resnet50 | 17 | finetune | 0.9996 | 0.9615 | 0.590 | 0.9406 | [0.827 - 1.000] | 0.8636 | 0.8462 | 0.8837 | 0.9048 | 0.7857 | 0.1364 | 0.0939 | 19 / 11 / 2 / 3 | 1.66 |
+| resnet50 | 12 | finetune | 0.9996 | 0.9615 | 0.590 | 0.9406 | [0.827 - 1.000] | 0.8636 | 0.8462 | 0.8837 | 0.9048 | 0.7857 | 0.1364 | 0.0939 | 19 / 11 / 2 / 3 | 1.66 |
 | efficientnet_b3 | 23 | finetune | 0.9221 | 0.9510 | 0.480 | 0.8304 | [0.680 - 0.962] | 0.9091 | 0.3846 | 0.8000 | 0.7143 | 0.7143 | 0.0909 | 0.1839 | 20 / 5 / 8 / 2 | 2.64 |
 | mobilevit_s | 14 | finetune | 0.9065 | 0.9161 | 0.515 | 0.7797 | [0.576 - 0.946] | 0.8182 | 0.6923 | 0.8182 | 0.8182 | 0.6923 | 0.1818 | 0.1678 | 18 / 9 / 4 / 4 | 1.35 |
 
