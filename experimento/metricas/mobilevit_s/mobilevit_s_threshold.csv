@@ -1,2 +1,0 @@
-model,threshold_val,val_auc,val_recall,val_fnr
-mobilevit_s,0.55,0.9406,0.9545,0.0455

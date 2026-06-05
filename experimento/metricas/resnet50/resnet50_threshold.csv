@@ -1,2 +1,0 @@
-model,threshold_val,val_auc,val_recall,val_fnr
-resnet50,0.535,0.9056,0.9545,0.0455
