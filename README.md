@@ -1,13 +1,13 @@
-# MRI Breast Cancer Classification via DCE-MRI 🧬
-
-
+# Trabajo de Grado 🧬
 
 [![Python 3.10+](https://img.shields.io/badge/python-3.10+-blue.svg)](https://www.python.org/downloads/)
 [![PyTorch](https://img.shields.io/badge/PyTorch-EE4C2C?logo=pytorch&logoColor=white)](https://pytorch.org/get-started/locally/)
 
-Repositorio académico correspondiente al desarrollo experimental de la clasificación binaria de lesiones mamarias benignas y malignas. Para esto se utilizaron técnicas de aprendizaje profundo aplicadas sobre imágenes de resonancia magnética dinámica con contraste (DCE-MRI).
+
+<img width="641" height="164" alt="image" src="https://github.com/user-attachments/assets/fea1c449-7f03-44a4-b1c2-a3ae8433bec9" />
 
 # 📄 **Clasificación de lesiones mamarias utilizando aprendizaje profundo en imágenes de resonancia magnética.**
+
 
 
 ## 👩‍💻 Autora
@@ -23,6 +23,7 @@ Ph.D. en Ingeniería
 **Mateo Rico García**
 M.Sc. en Automatización y Control Industrial
 
+Repositorio académico correspondiente al desarrollo experimental de la clasificación binaria de lesiones mamarias benignas y malignas. Para esto se utilizaron técnicas de aprendizaje profundo aplicadas sobre imágenes de resonancia magnética dinámica con contraste (DCE-MRI).
 
 ## 🚀 Descripción del proyecto
 
